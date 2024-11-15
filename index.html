@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicitaciones por tu graduación</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9d66d1;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            background: linear-gradient(145deg, #8a2be2, #6a0dad);
+            padding: 30px;
+            max-width: 500px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            position: relative;
+        }
+
+        /* Iconos de aviones animados */
+        .airplane-icon {
+            font-size: 2em;
+            position: absolute;
+            color: #fff;
+            animation: float 3s infinite;
+        }
+        .airplane-icon.left {
+            top: 10px;
+            left: 15px;
+            animation-delay: 0s;
+        }
+        .airplane-icon.right {
+            bottom: 10px;
+            right: 15px;
+            animation-delay: 1s;
+        }
+
+        /* Animación de los aviones */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Imagen del graduado */
+        .photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            object-fit: cover;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        /* Estilos del título y texto */
+        h1 {
+            color: #ffe6ff;
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #f9f1ff;
+            line-height: 1.5;
+        }
+
+        /* Botón con efecto de hover */
+        .button {
+            display: inline-block;
+            padding: 10px 25px;
+            margin-top: 20px;
+            color: #8a2be2;
+            background-color: #ffe6ff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #fff;
+            color: #6a0dad;
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Iconos de aviones -->
+        <div class="airplane-icon left">✈️</div>
+        <div class="airplane-icon right">✈️</div>
+
+        <!-- Foto del graduado -->
+        <img src="dayra_foto.jpg" alt="Foto del graduado" class="photo">
+
+        <!-- Mensaje de felicitación -->
+        <h1>¡Felicitaciones!</h1>
+        <p>Querida Dayra,</p>
+        <p>¡Estoy muy emocionado de verte alcanzar tu sueño de convertirte en azafata. Todo tu esfuerzo y dedicación han dado frutos, y se que tendrás un futuro brillante volando alto.</p>
+        <p>¡Disfruta de esta nueva aventura y sigue persiguiendo las estrellas!</p>
+
+        <!-- Botón para celebrar -->
+        <a href="#" class="button">¡Vamos a celebrar!</a>
+    </div>
+</body>
+</html>
