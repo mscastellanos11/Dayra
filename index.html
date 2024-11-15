@@ -8,13 +8,13 @@
         /* Estilos Generales */
         body {
             font-family: Arial, sans-serif;
-            background-color: #9d66d1;
+            background-color: #a46dd7;
             color: #333;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             overflow: hidden;
         }
 
@@ -22,6 +22,7 @@
             background: linear-gradient(145deg, #8a2be2, #6a0dad);
             padding: 30px;
             max-width: 500px;
+            width: 90%;
             text-align: center;
             border-radius: 15px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
@@ -97,6 +98,27 @@
             color: #6a0dad;
             transform: scale(1.05);
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Media Query para dispositivos móviles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .photo {
+                width: 100px;
+                height: 100px;
+            }
+
+            .button {
+                font-size: 0.9em;
+                padding: 8px 20px;
+            }
         }
     </style>
 </head>
